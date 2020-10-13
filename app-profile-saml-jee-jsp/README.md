@@ -58,6 +58,8 @@ Finally you need to configure the adapter, this is done by retrieving the adapte
 * Edit `keycloak-saml.xml` and replace `SPECIFY YOUR LOGOUT PAGE!` with `/index.jsp`
 * Move the file `keycloak-saml.xml` to the `config/` directory in the root of the quickstart
 
+**Verify if you have the role 'user' mapped at the user level, if not, create the role 'user' and than assign the role at the user**
+
 As an alternative you can create the client by importing the file [client-import.json](config/client-import.json) and
 copying [config/keycloak-saml-example.xml](config/keycloak-saml-example.xml) to `config/keycloak-saml.xml`. Finally,
 you need to edit `config/keycloak-saml.xml` and replace `REPLACE WITH REALM CERTIFICATE` with the actual realm certificate.
